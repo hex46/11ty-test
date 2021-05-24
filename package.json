@@ -1,0 +1,31 @@
+{
+  "name": "11ty-test",
+  "version": "1.0.0",
+  "description": "Eleventy test",
+  "scripts": {
+    "watch": "ELEVENTY_ENV=development npx @11ty/eleventy --serve",
+    "build": "ELEVENTY_ENV=production npx @11ty/eleventy",
+    "debug": "DEBUG=* npx @11ty/eleventy",
+    "clean": "rm -rf output"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "test"
+  ],
+  "author": "hex46",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.9.0",
+    "@babel/core": "^7.14.2",
+    "autoprefixer": "^10.2.5",
+    "cssnano": "^5.0.2",
+    "graphql": "^15.5.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.2.15",
+    "postcss-import": "^14.0.2",
+    "sass": "^1.32.13",
+    "uglify-js": "^3.13.7"
+  }
+}

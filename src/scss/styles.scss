@@ -1,0 +1,75 @@
+// just some dark Nord colors (https://www.nordtheme.com/)
+$background-color: #2e3440;
+$text-color: #eceff4;
+$primary-color: #88c0d0;
+
+@mixin container {
+    max-width: 900px;
+    margin: auto;
+}
+
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    button {
+        border: 2px solid $primary-color;
+        border-radius: 30px;
+    }
+
+    a:hover {
+        color: $primary-color;
+    }
+
+    a {
+        color: $text-color;
+    }
+
+    main {
+        @include container;
+        flex: 1;
+        padding: 0 2em;
+    }
+
+    header h1 {
+        text-align: center;
+        width: 100%;
+        border-bottom: 3px solid $primary-color;
+        padding-bottom: 0.25em;
+    }
+
+    .tags {
+        display: flex;
+        justify-content: center;
+        a {
+            margin: 0 1em;
+        }
+    }
+
+    article {
+        border-bottom: 3px solid $text-color;
+        margin-top: 3em;
+    }
+
+    footer {
+        @include container;
+        text-align: center;
+        padding: 1em 0;
+    }
+     
+    .pagination {
+        margin: 1em 0;
+        width: 100%;
+        text-align: right;
+    }
+
+    .menu {
+        @include container;
+    }
+}

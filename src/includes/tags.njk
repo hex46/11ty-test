@@ -1,0 +1,6 @@
+<nav class="tags">
+    {% for tag in collections.tagsList %}
+        {% set tagUrl %} /tags/{{ tag }}/ {% endset %}
+        <a href="{{ tagUrl}}">{{ tag }} ({{ collections[tag].length }})</a>
+    {% endfor %}
+</nav>
